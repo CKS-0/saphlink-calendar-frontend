@@ -1,0 +1,40 @@
+.form-container {
+    max-width: 450px;
+    padding: 5rem;
+    border: 8px outset rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    width: 450px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.signin-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.sign-in-form label {
+    display: block;
+    color: black;
+}
+
+
+.error-message {
+    color: #ff4d4f;
+    margin-bottom: 10px;
+}
+
+
+
+.sign-up-text {
+    text-decoration: underline;
+    cursor: pointer;
+}

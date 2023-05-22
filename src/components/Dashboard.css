@@ -1,0 +1,112 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    --fc-event-text-color: black;
+}
+
+#calendar {
+    /* flex: 1; */
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 70px;
+    padding: 20px;
+}
+
+/* Set the background color of the current date */
+.fc-daygrid-day.fc-today {
+    background-color: #e5f5f5;
+}
+
+/* Style for events in the calendar */
+.fc-daygrid-event {
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Style for the popover */
+.popover {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Style for the popover close button */
+.popover .close {
+    color: black;
+    border: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    margin: -20px 0 -20px 170px;
+    cursor: pointer;
+    width: 29px;
+}
+
+/* Style for the form group */
+.popover .form-group {
+    margin: 10px 0;
+}
+
+/* Style for the form label */
+.popover label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the form input */
+.popover input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.popover textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none;
+}
+
+/* Style for the buttons in the popover */
+.popover button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the create button */
+.popover .create {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+/* Style for the delete button */
+.popover .delete {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Style for the update button */
+.popover .update {
+    background-color: #2196f3;
+    color: #fff;
+}

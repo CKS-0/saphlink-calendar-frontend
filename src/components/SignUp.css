@@ -1,0 +1,27 @@
+.registration-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.signup-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    text-align: left;
+    padding: 0.25rem 0;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.sign-in-text {
+    text-decoration: underline;
+    cursor: pointer;
+}

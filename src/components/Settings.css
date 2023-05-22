@@ -1,0 +1,38 @@
+.user-update-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    text-align: left;
+    padding: 0.25rem 0;
+}
+
+.settings-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 90px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 8px outset rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 450px;
+}
+
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
