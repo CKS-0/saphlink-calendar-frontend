@@ -17,7 +17,7 @@ const Settings = () => {
     useEffect(() => {
         const getUserData = async () => {
             try {
-                const response = await axiosInstance.get('${baseURL}/user/me');
+                const response = await axiosInstance.get(`${baseURL}/user/me`);
                 const { name, username } = response.data;
                 setUserData({ name, username });
             } catch (error) {
