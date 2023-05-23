@@ -80,13 +80,15 @@ const Settings = () => {
 
     const handleGoogleSignOut = async (account) => {
         try {
-            const response = await axiosInstance.post(
-                `${baseURL}/user/google/calendar/unsync`,
-                {
-                    resourceId: account.resourceId,
-                    calendarId: account.calendarId,
-                }
-            );
+            console.log(account.calendarId)
+            const payload = {
+                calendarId: account.calendarId,
+                resourceId: account.resourceId
+            }
+
+            const response = await axiosInstance.delete(`${baseURL}/user/google/calendar/unsync`, {
+                data: payload
+            });
 
         } catch (error) {
             console.error(error);
@@ -96,7 +98,7 @@ const Settings = () => {
 
     const handleOutlookSignOut = async (account) => {
         try {
-            const response = await axiosInstance.post(
+            const response = await axiosInstance.delete(
                 `${baseURL}/user/outlook/calendar/unsync`,
                 {
                     resourceId: account.resourceId,
