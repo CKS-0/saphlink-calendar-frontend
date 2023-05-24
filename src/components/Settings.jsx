@@ -98,12 +98,14 @@ const Settings = () => {
 
     const handleOutlookSignOut = async (account) => {
         try {
-            const response = await axiosInstance.delete(
-                `${baseURL}/user/outlook/calendar/unsync`,
-                {
-                    resourceId: account.resourceId,
-                    calendarId: account.calendarId,
-                }
+            console.log(account.calendarId)
+            const payload = {
+                calendarId: account.calendarId,
+                resourceId: account.resourceId
+            }
+            const response = await axiosInstance.delete(`${baseURL}/user/outlook/calendar/unsync`, {
+                data: payload
+            }
             );
 
         } catch (error) {
