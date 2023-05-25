@@ -90,9 +90,13 @@ const Settings = () => {
                 data: payload
             });
 
+            // If unsync successful, reload the page
+            if(response.status == 200) {
+                window.location.reload()
+            }
         } catch (error) {
             console.error(error);
-
+            alert("Unsync failed.");
         }
     };
 
@@ -108,9 +112,14 @@ const Settings = () => {
             }
             );
 
+            // If unsync successful, reload the page
+            if(response.status == 200) {
+                window.location.reload()
+            }
+
         } catch (error) {
             console.error(error);
-
+            alert("Unsync failed.");
         }
     };
 
